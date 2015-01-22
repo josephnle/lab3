@@ -34,6 +34,8 @@ function projectClick(e) {
   // Cancel the default action, which prevents the page from reloading
   e.preventDefault();
 
+  $(this).find(".img").fadeIn();
+
   // In an event listener, $(this) is the element that fired the event
   var projectTitle = $(this).find("p").text();
   var jumbotronHeader = $(".jumbotron h1");
